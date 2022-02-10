@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LOOPS, ARRAYS, OBJECTS</title>
+</head>
+<body>
+    <script>
+        var students =      //creating an array of 5 objects with 4 properties
+[
+     {
+    name : "Aarush",
+    age: 19,
+    gender:"Male",
+    city: "Nagpur"
+     },
+     {
+    name : "Jai",
+    age : 16,
+    gender: "Male",
+    city : "Kanpur"
+     },
+     {
+    name : "Sonu",
+    gender :"Female",
+    age : 36,
+    city : "Madaras"
+    },
+    {
+    name : "Sumit",
+    age : 45,
+    gender: "Male",
+    city : "Jabalpur"
+    },
+    {
+    name : "Simmi",
+    age : 20,
+    gender :"Female",
+    city : "Pune"
+     },
+]
+for(i=0;i<5;i++)         //printing 2 properties using for loop
+{
+    console.log(students[i].name);
+    console.log(students[i].gender);
+}
+students.forEach(              //printing 2 properties using forEach loop
+    function(studts, index)
+    {
+        console.log(studts.city);
+        console.log(studts.age);
+    }
+)
+
+    </script>
+</body>
+</html>
